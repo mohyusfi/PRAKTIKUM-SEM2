@@ -1,0 +1,17 @@
+  for (int i = 0; i < baris1; i++) {
+        for (int j = 0; j < kolom2; j++) {
+            for (int k = 0; k < kolom1; k++) {
+                hasil[i][j] += A[i][k] * B[k][j];
+            }
+        }
+    }
+
+
+
+    void show_matriks(int *matriks, int length) {
+    cout << matriks[2] << endl;
+}
+
+int length(int size_matriks)  {
+    return size_matriks / sizeof(int);
+}
