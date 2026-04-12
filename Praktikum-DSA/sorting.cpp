@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-#include <iostream>
-
-
-
-int main()
-{
-
-=======
 #include <iostream>
 
 using namespace std;
@@ -165,5 +156,4 @@ int main()
     mergesort(arrd, 0, 4);
     cout << "hasil: ";
     print_arr(arrd);
->>>>>>> 609fdb080b6f7d90dbc07a6e14215537edccab60
 }
