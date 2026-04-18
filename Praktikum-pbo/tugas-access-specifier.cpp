@@ -8,7 +8,7 @@ class EWallet {
     string pin;
 
     protected:
-    int limit_transfer = 500;
+    int limit_transfer = 1000000;
     int limit_saldo = 20000000;
         
     public:
@@ -28,7 +28,7 @@ class EWallet {
     }
 
     void pay(EWallet *acc, int amount) {
-        if(acc == nullptr) {
+        if(acc ==  nullptr) {
             cout << "terjadi kesalahan" << endl;
             return;
         };
@@ -46,8 +46,8 @@ class EWallet {
 class PlusAccount: public EWallet {
     public:
     PlusAccount() {
+        EWallet::limit_transfer = 5000000;
         EWallet::limit_saldo = 1000;
-        EWallet::limit_transfer = 100000000;
     }
 
     void transfer(int amount) override {
@@ -67,5 +67,5 @@ int main()
     account.set_saldo(100000);
 
     // *prem_acc = PlusAccount("yusfi", 100000, "123");
-    account.pay(&prem_acc, 999);
+    account.pay(&prem_acc, 1001);
 }
