@@ -12,6 +12,13 @@ void bubblesort(int arr[], int n) {
                 arr[j + 1] = temp;
             }
         }
+        for (int i = 0; i < n; i++)
+        {
+            cout << arr[i] << " ";
+        }
+
+        cout << endl;
+        
     }
 }
 
@@ -123,37 +130,40 @@ int main()
     int arrd[5] = {4, 5, 3, 2, 1};
 
 
-    cout << "== Hasil Bubble Sort ==" << endl;
-    cout << "input: ";
-    print_arr(arra);
     bubblesort(arra, 5);
-    cout << "hasil: ";
-    print_arr(arra);
 
-    cout << endl;
 
-    cout << "== Hasil Insertion Sort ==" << endl;
-    cout << "input: ";
-    print_arr(arrb);
-    insertionsort(arrb, 5);
-    cout << "hasil: ";
-    print_arr(arrb);
+    // cout << "== Hasil Bubble Sort ==" << endl;
+    // cout << "input: ";
+    // print_arr(arra);
+    // bubblesort(arra, 5);
+    // cout << "hasil: ";
+    // print_arr(arra);
 
-    cout << endl;
+    // cout << endl;
 
-    cout << "== Hasil Selection Sort ==" << endl;
-    cout << "input: ";
-    print_arr(arrc);
-    selectionsort(arrc, 5);
-    cout << "hasil: ";
-    print_arr(arrc);
+    // cout << "== Hasil Insertion Sort ==" << endl;
+    // cout << "input: ";
+    // print_arr(arrb);
+    // insertionsort(arrb, 5);
+    // cout << "hasil: ";
+    // print_arr(arrb);
 
-    cout << endl;
+    // cout << endl;
 
-    cout << "== Hasil Merge Sort ==" << endl;
-    cout << "input: ";
-    print_arr(arrd);
-    mergesort(arrd, 0, 4);
-    cout << "hasil: ";
-    print_arr(arrd);
+    // cout << "== Hasil Selection Sort ==" << endl;
+    // cout << "input: ";
+    // print_arr(arrc);
+    // selectionsort(arrc, 5);
+    // cout << "hasil: ";
+    // print_arr(arrc);
+
+    // cout << endl;
+
+    // cout << "== Hasil Merge Sort ==" << endl;
+    // cout << "input: ";
+    // print_arr(arrd);
+    // mergesort(arrd, 0, 4);
+    // cout << "hasil: ";
+    // print_arr(arrd);
 }
