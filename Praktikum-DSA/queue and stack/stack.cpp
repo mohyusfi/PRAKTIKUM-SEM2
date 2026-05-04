@@ -13,5 +13,5 @@ class Stack {
 
 int main()
 {
-    Stack numbers::<100>;
+    Stack<100> numbers;
 }
