@@ -9,12 +9,9 @@ class Human {
     int age;
 };
 
-
-class Student: public1   Human {
+class Student: public Human {
     
 };
-
-
 
 int main()
 {
